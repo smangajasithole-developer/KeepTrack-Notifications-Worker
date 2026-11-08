@@ -1,0 +1,28 @@
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "keeptrack-notifications",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-02",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "PUSH_DELIVERY_START_AT": "2026-11-04T14:02:34.054Z"
+  },
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "bffa8288073049a69708b3b8610936c9"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  }
+}
